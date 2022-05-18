@@ -1,0 +1,4 @@
+
+config zigbee2mqtt 'sample_config'
+	option enabled '0'
+

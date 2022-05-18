@@ -1,0 +1,12 @@
+#!/bin/sh
+
+uci -q batch <<-EOF >/dev/null
+	delete ucitrack.@zigbee2mqtt[-1]
+	add ucitrack zigbee2mqtt
+	set ucitrack.@zigbee2mqtt[-1].init=zigbee2mqtt
+	commit ucitrack
+EOF
+
+rm -f /tmp/luci-indexcache
+chmod 755 /etc/init.d/zigbee2mqtt
+exit 0
