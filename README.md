@@ -10,5 +10,7 @@ Luci app manage zigbee2mqtt configuration/setting (Domoticz on domorouter - domo
     
     
 
-    **Remove line in /golex/openwrt/feeds/node/node-zigbee2mqtt/Makefile
+**Remove line in /golex/openwrt/feeds/node/node-zigbee2mqtt/Makefile
       $(INSTALL_BIN) ./files/zigbee2mqtt.init $(1)/etc/init.d/zigbee2mqtt
+
+**rm files/opt/zigbee2mqtt/data/configuration.yaml
